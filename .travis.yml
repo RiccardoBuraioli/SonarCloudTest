@@ -7,7 +7,7 @@ addons:
 sonarcloud: 
   organization:"riccardoburaioli"
 token: 
-  secure:"03670ce9eae98a343580f7f500a7ba8af9a7d10c"
+  secure:"e4cf5681f0bbce46cc77f4cd4ff06e21b562ee68"
 script: 
 - ant build 
 - sonar-scanner 
