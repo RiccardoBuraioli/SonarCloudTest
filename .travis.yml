@@ -5,11 +5,11 @@ jdk:
 
 addons:
 sonarcloud: 
-  organization:"RiccardoBuraioli"
+  organization:"riccardoburaioli"
 token: 
-  secure:"e4cf5681f0bbce46cc77f4cd4ff06e21b562ee68"
+  secure:"travis encrypt 32114f5855757e33e7f6adb91ab2b596b03cc3ca"
 script: 
 - ant build 
- - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sonar-scanner; fi'
+- sonar-scanner
 
  
