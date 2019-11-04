@@ -10,6 +10,6 @@ token:
   secure:"e4cf5681f0bbce46cc77f4cd4ff06e21b562ee68"
 script: 
 - ant build 
-- sonar-scanner
+ - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sonar-scanner; fi'
 
  
