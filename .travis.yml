@@ -5,11 +5,11 @@ jdk:
 
 addons:
 sonarcloud: 
-  organization:"riccardoburaioli"
+  organization:"RiccardoBuraioli"
 token: 
   secure:"e4cf5681f0bbce46cc77f4cd4ff06e21b562ee68"
 script: 
 - ant build 
-- sonar-scanner 
+- mvn clean verify sonar:sonar -Pcoverage -Dsonar.projectKey=myorg_myrepo
 
  
