@@ -10,6 +10,6 @@ token:
   secure:"e4cf5681f0bbce46cc77f4cd4ff06e21b562ee68"
 script: 
 - ant build 
-- mvn clean verify sonar:sonar -Pcoverage -Dsonar.projectKey=myorg_myrepo
+- sonar-scanner
 
  
