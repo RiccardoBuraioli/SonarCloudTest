@@ -1,15 +1,9 @@
-language: java
-
-jdk:
- -openjdk8
-
+dist: trusty
 addons:
-sonarcloud: 
-  organization:"riccardoburaioli"
-token: 
-  secure:"travis encrypt 32114f5855757e33e7f6adb91ab2b596b03cc3ca"
-script: 
-- ant build 
-- sonar-scanner
+  sonarcloud:
+    organization: "riccardoburaioli"
+    token:
+      secure: "5f4e6fc561de8a565068e4f02884562b05a5a15c" 
 
- 
+script:
+  - sonar-scanner
