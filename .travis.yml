@@ -4,9 +4,9 @@ jdk:
 dist: trusty
 addons:
   sonarcloud:
-    organization: "riccardoburaioli"
+    organization: riccardoburaioli
     token:
-      secure: "905652a3bf641fe205b739bc69fd2e8ab070f26e" 
+      secure: 905652a3bf641fe205b739bc69fd2e8ab070f26e 
 
 script: 
 - ant build 
