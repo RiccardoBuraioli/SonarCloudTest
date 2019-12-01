@@ -3,7 +3,7 @@ addons:
   sonarcloud:
     organization: "riccardoburaioli"
     token:
-      secure: "5f4e6fc561de8a565068e4f02884562b05a5a15c" 
+      secure: "905652a3bf641fe205b739bc69fd2e8ab070f26e" 
 
 script:
   - sonar-scanner
