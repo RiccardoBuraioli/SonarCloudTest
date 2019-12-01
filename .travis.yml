@@ -1,3 +1,6 @@
+language: java
+jdk:
+- openjdk8
 dist: trusty
 addons:
   sonarcloud:
@@ -5,5 +8,6 @@ addons:
     token:
       secure: "905652a3bf641fe205b739bc69fd2e8ab070f26e" 
 
-script:
-  - sonar-scanner
+script: 
+- ant build 
+- sonar-scanner
